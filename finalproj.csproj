@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="images\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="images\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="images\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="images\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\background.jpg" />
+    <Content Remove="wwwroot\images\datamodel.jpg" />
+    <Content Remove="wwwroot\images\groupmem1.jpg" />
+    <Content Remove="wwwroot\images\groupmem2.jpg" />
+    <Content Remove="wwwroot\images\groupmem3.jpg" />
+    <Content Remove="wwwroot\images\groupmem4.jpg" />
+    <Content Remove="wwwroot\images\kitten.jpeg" />
+    <Content Remove="wwwroot\images\p1.jpg" />
+    <Content Remove="wwwroot\images\P2.jpg" />
+    <Content Remove="wwwroot\images\p3.jpg" />
+    <Content Remove="wwwroot\images\rabbit.jpeg" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="Views\Home\About.cshtml" />
+    <None Include="Views\Home\Lost.cshtml" />
+    <None Include="wwwroot\css\aboutusstyle.css" />
+    <None Include="wwwroot\css\stelesFound.css" />
+    <None Include="wwwroot\css\styles.css" />
+    <None Include="wwwroot\css\styleStats.css" />
+    <None Include="wwwroot\images\background.jpg" />
+    <None Include="wwwroot\images\datamodel.jpg" />
+    <None Include="wwwroot\images\groupmem1.jpg" />
+    <None Include="wwwroot\images\groupmem2.jpg" />
+    <None Include="wwwroot\images\groupmem3.jpg" />
+    <None Include="wwwroot\images\groupmem4.jpg" />
+    <None Include="wwwroot\images\kitten.jpeg" />
+    <None Include="wwwroot\images\p1.jpg" />
+    <None Include="wwwroot\images\P2.jpg" />
+    <None Include="wwwroot\images\p3.jpg" />
+    <None Include="wwwroot\images\rabbit.jpeg" />
+    <None Include="wwwroot\js\chart.js" />
+    <None Include="wwwroot\js\lostScript.js" />
+    <None Include="wwwroot\js\script.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Popper.js" Version="1.16.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Home\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

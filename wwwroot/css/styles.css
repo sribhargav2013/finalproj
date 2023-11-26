@@ -1,0 +1,102 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    font-family: Tahoma;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px; /* Increased padding for better spacing on mobile devices */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .content {
+        position: relative; /* Change position to relative for smaller screens */
+        width: 90%; /* Adjust the width for better readability on smaller screens */
+        margin: 0 auto; /* Center the content horizontally */
+        padding: 15px; /* Adjust padding for better spacing on smaller screens */
+        box-shadow: none; /* Remove box shadow on smaller screens if needed */
+    }
+}
+
+.carousel-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.scrollable-table {
+    max-height: 60vh; /* Reduced the max height */
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.table-container {
+    padding: 10px;
+}
+
+.report-form button {
+    margin-top: 20px; /* Increased margin-top to create more space */
+}
+
+.team-member img {
+    max-width: 80%;
+    height: 90px;
+    border-radius: 8px;
+}
+
+/* Your additional CSS code can be added here */
+/*.navbar-nav li:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+    */

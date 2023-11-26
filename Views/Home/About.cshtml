@@ -1,0 +1,192 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title><!-- Link Bootstrap CSS (CDN) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link Font Awesome CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/aboutusstyle.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar using Bootstrap -->
+    <div>
+        <!-- Navigation Bar using Bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <a class="navbar-brand text-white" asp-controller="Home" asp-action="Index">From Lost to Loved</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light btn-floating m-1 border-0" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light btn-floating m-1 border-0" asp-controller="Home" asp-action="Stats">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light btn-floating m-1 border-0" asp-controller="Home" asp-action="Found">Report a Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light btn-floating m-1 border-0" asp-controller="Home" asp-action="Lost">Pet Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light btn-floating m-1 border-0" asp-controller="Home" asp-action="About">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <!-- About Us Content -->
+        <div class="container mt-5">
+            <h2>About Us</h2>
+            <p class="lead">
+                We are a passionate team dedicated to reuniting lost pets with their families and promoting pet adoption.
+                We are committed to providing accurate and up-to-date information about lost and found pets, as well as adoptable pets. We also strive to provide our users with the resources and support they need to reunite lost pets with their families and to find loving homes for adoptable pets.
+                We hope that our website will be a valuable resource for the community and that we can help to make a difference in the lives of pets and their families.
+            </p>
+            <h2>Motivation</h2>
+            <p class="lead">
+                Every year, millions of pets go missing. Some are lost, some are stolen, and some are abandoned. These pets often end up in shelters, where they may face euthanasia if they are not adopted.
+                We were motivated to create this website to help reunite lost pets with their families and to find loving homes for adoptable pets. We believe that every pet deserves a loving home, and we are committed to doing everything we can to help them find one.
+            </p>
+            <h2>Our Team</h2>
+            <p class="lead">We are animal lovers, volunteers, and professionals who are committed to making a difference in the lives of pets and their owners. We use our technical expertise to develop and implement innovative solutions to reunite lost pets with their families and to find forever homes for homeless animals.</p>
+
+        </div>
+
+        <!-- Team Section -->
+        <div class="container mt-5 ">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="~/images/groupmem1.jpg" alt="Team Member 1" style=" width:400px">
+                <div class="member-info lead">
+                    <h3>Sai Surya Prakash Munikoti</h3>
+                    <p>Email: saisuryaprakashm@usf.edu </p>
+                    <p>I hold a Bachelor of Science degree in Computer Science and am currently pursuing a Master of Science in the same field, as well as one year of experience as a full-stack developer at Mindtree.</p>
+                    <p>Programming Team Lead with expertise in developing and maintaining high-quality web pages with functionality, collaborating with a team members to bring the web pages to life.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="/images/groupmem2.jpg" alt="Team Member 2" style="width:400px">
+                <div class="member-info lead">
+                    <h3>Sri Bhargav Lakkireddy</h3>
+                    <p>Email: lakkireddy1@usf.edu</p>
+                    <p>I have a Bachelor's in Computer Science and am currently pursuing a Master's in Business Analytics and Information Systems. I have one year of experience as a .NET developer at TCS.</p>
+                    <p>Gathering and preparing data, and design user-friendly and informative web pages, collaborating with our team to bring the web pages to life.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="/images/groupmem3.jpg" alt="Team Member 3" style="width:400px">
+                <div class="member-info lead">
+                    <h3>Giri Sai Chaitanya Bheemisetty</h3>
+                    <p>Email: girisaichaitanyab@usf.edu</p>
+                    <p>I hold a Bachelor of Science degree in Computer Science and am currently pursuing a Master of Science in the same field, as well as one year of experience as a QA Tester at TCS.</p>
+                    <p>Gathering and preparing data, and design user-friendly and informative web pages, collaborating with our team to bring the web pages to life.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="/images/groupmem4.jpg" height="1060" width="500" alt="Team Member 4" style="float: left; margin-right: 10px; max-width: 50%;"/>
+                <div class="member-info lead">
+                    <h3>Ameer Basha Mittigar</h3>
+                    <p>Email: ameerbashamittigar@usf.edu</p>
+                    <p>I am a dedicated and results-oriented professional with experience as a Project Management and Data Reporting specialist & currently pursuing Master's in Business Analytics and Information Systems</p>
+                    <p>Project planning & collaborating with the team.</p>
+                </div>
+            </div>
+            <div style="overflow: hidden;">
+                <h2>Our Data Model</h2>
+                <img src="/images/datamodel.jpg" height="560" width="606" alt="Data Model" style="float: left; margin-right: 10px; max-width: 50%;" />
+                <p class="lead">
+                    We gathered the data from <a href="https://catalog.data.gov/dataset/lost-found-adoptable-pets" target="_blank"> Data.gov </a>and built a searchable database of lost, found, and adoptable pets.
+                    Our goal is to reunite lost pets with their families and to find loving homes for adoptable pets.
+                    We are committed to developing the styling of the webpage to make it more interactive and to improve data retrieval speed and accuracy. You can fork our project on <a href="https://github.com/surya97036/DIS_WebLookAndFeel" target="_blank">Github</a>. We welcome contributions from the community!
+                </p>
+                <p class="lead">
+                    We are excited to announce that our project will soon be deployed to Azure! This will allow us to scale our platform and serve more users, while also improving performance and reliability.
+                </p>
+            </div>
+
+            <div>
+                <h4>Contact Us</h4>
+                <p class="lead">We welcome your feedback and suggestions. If you have any questions, would like to get involved in our mission, or simply want to say hi, please don't hesitate to contact us. We'd love to hear from you!</p>
+            </div>
+        </div>
+    </main>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/USFMuma" role="button" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/USFMuma" role="button" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://mail.google.com/" role="button" target="_blank">
+                    <i class="fab fa-google"></i>
+                </a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/usfmuma/" role="button" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/surya97036/DIS_WebLookAndFeel" target="_blank" role="button">
+
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+
+            <!-- Section: Social media -->
+            <p>
+                Adopting pets is crucial as it provides loving homes for animals in need, reduces overpopulation, and saves lives.
+                It fosters companionship, promotes responsible pet ownership, and contributes to a compassionate society where animals are valued members of families.
+            </p>
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="about.html">Contact Us</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End of .container -->
+    <!-- Include Bootstrap JavaScript and jQuery (CDN) -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Include your own JavaScript and additional libraries as necessary -->
+</body>
+</html>
