@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using finalproj.Models; // Add this using statement
+using finalproj.Models;
+// Add this using statement
 namespace finalproj
 {
     public class Startup
@@ -11,20 +12,30 @@ namespace finalproj
 
         public IConfiguration Configuration { get; } // Ensure this property is defined at the class level
 
+
         public void ConfigureServices(IServiceCollection services)
         {
-            // Uncomment the following lines to configure the database context
+            // Add the DataContext service to the dependency injection container
             services.AddDbContext<DataContext>(options =>
-                options.UseSqlServer(Configuration["Data:FinalProj:ConnectionString"]));
+            {
+                options.UseSqlServer(Configuration["Data:FinalProj:ConnectionString"]);
+            });
 
+            // Add the DataImporter service to the dependency injection container as scoped
+            services.AddScoped<IDataImporter, DataImporter>();
+
+            // Add controllers with views
             services.AddControllersWithViews();
         }
 
-       
+
+
+
+
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            using (var serviceScope = app.ApplicationServices.CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<DataContext>();
                 context.Database.EnsureCreated();

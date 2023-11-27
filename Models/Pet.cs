@@ -2,8 +2,9 @@
 
 namespace finalproj.Models
 {
-	public class Pet
-	{
+    public class Pet
+    {
+        [Key]
         [Required]
         public string AnimalID { get; set; }
 
@@ -30,6 +31,5 @@ namespace finalproj.Models
         public string Memo { get; set; }
 
         public string Temperament { get; set; }
-
     }
 }
