@@ -7,8 +7,9 @@ body {
 .container {
     text-align: center;
     background-color: #fff;
-    padding: 20px;
+    /*padding: 20px;*/
     border-radius: 10px;
+    max-width: 100%;
 }
 
 /* Style the table */
@@ -20,11 +21,6 @@ table {
 .report-form {
     max-width: 400px;
     margin: 0 auto;
-}
-footer {
-    background-color: #333; /* Replace with your desired background color */
-    color: white; /* Text color for better visibility */
-    padding: 20px; /* Adjust padding as needed */
 }
 body, html {
     height: 100%;
