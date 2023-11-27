@@ -48,15 +48,16 @@
 }
 
 .carousel-item {
-    position: absolute;
+    position: relative;
+    object-fit: -webkit-fill-available;
     width: 100%;
-    height: 100%;
+    height: -webkit-fill-available;
 }
 
 .carousel img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
-    height: 100%;
+    height: initial;
 }
 
 .scrollable-table {
@@ -74,19 +75,22 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 90%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
-    width: 100%;
+    width: -webkit-fill-available;
 }
 .table-container {
     margin: 0 auto;

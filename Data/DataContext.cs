@@ -4,6 +4,7 @@ namespace finalproj.Models
 {
     public class DataContext : DbContext
     {
+        public DbSet<Pet> Pets { get; set; }
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
