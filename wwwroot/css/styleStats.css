@@ -17,16 +17,18 @@ body, html {
 main {
     flex: 1;
 
-    padding: 20px;
+    padding: 0px;
 }
 
 .navbar {
     top: inherit;
     position:relative;
     width: inherit;
+    display:flex;
 }
 container {
    
     max-width: none; /* Remove maximum width restriction */
     width: 100%; /* Ensure container fills the available width */
 }
+
